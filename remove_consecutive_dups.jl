@@ -1,5 +1,5 @@
 # return a copy of lst with consecutive duplicates of elements eliminated. For example, for lst = [a,a,a,a,b,c,c,a,a,d,e,e,e,e], the returned list is [a,b,c,a,d,e].
-lst = [1, 4, 4, 4, 5, 6, 7, 4, 3, 3, 9]
+lst = [a,a,a,a,b,c,c,a,a,d,e,e,e,e]
 
 function removeConsecutiveDups(lst)
 
