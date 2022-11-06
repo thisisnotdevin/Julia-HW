@@ -3,15 +3,17 @@ lst = [1,1,1,1,1,1,2,3,4,4,5,1,2]
 
 function removeDups(lst)
     
-    lst2 = []
+    lst2 = Vector{eltype(lst)}()
+    sort!(lst)
     first = lst[1]
     push!(lst2,first)
-
     for e in lst
-      
-       
+        if e != first
+        first = e
+        push!(lst2,first)
+        end
     end
+    
     return lst2
 end
 
-println(removeDups(lst))
